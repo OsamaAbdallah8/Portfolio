@@ -1,0 +1,29 @@
+@use "../utils/var.scss" as *;
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: $primary-color;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    &__menu{
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    a:hover{
+        color: $secondary-color;
+    }
+}

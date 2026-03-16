@@ -1,0 +1,12 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "Congratulations on completing all the lessons of the course! You're almost there! It’s time to put your newly acquired skills into practice by building the homepage for your portfolio site. This project will showcase your ability to create a responsive, accessible, and professional webpages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

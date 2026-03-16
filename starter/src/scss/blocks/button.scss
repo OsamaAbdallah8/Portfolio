@@ -1,0 +1,22 @@
+@use "../utils/utils";
+@use "../utils/var.scss" as *;
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+
+    &--primary{
+        background: $primary-color;
+        color: #fff;
+    }
+    &--secondary{
+        background: $secondary-color;
+        color: #fff;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}

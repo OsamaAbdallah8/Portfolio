@@ -1,0 +1,25 @@
+@use "../utils/utils.scss" as *;
+@use "../utils/var.scss" as *;
+
+.project{
+    padding: 80px 20px;
+
+    .project__button{
+        text-align: center;
+        margin-top: 40px;
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    @include mobile{
+        &__grid{
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="../dist/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="body">
+  <header class="header">
+    <nav class="header__nav">
+      <h2 class="header__logo">Osama</h2>
+      <ul class="header__menu">
+        <li><a href="#latest-projects">Projects</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="bio" class="bio">
+      <div class="bio__container">
+        <figure>
+          <img class="bio__image" src="../src/img/osama.jpeg" alt="Osama Abdallah profile photo">
+        </figure>
+        <div class="bio__content">
+          <h1 class="bio__title">Osama Abdallah Web Development Portfolio</h1>
+          <p class="bio__text">
+            Front-end developer passionate about creating
+            responsive and accessible websites.
+          </p>
+          <div class="bio__button">
+            <a href="#latest-projects" class="btn btn--primary">
+              View Projects
+            </a>
+            <a href="#latest-projects" class="btn btn--secondary">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="latest-projects" class="latest-projects">
+      <h2 class="project__title">
+        Latest Projects
+      </h2>
+      <div class="project__grid">
+        <article class="card">
+          <img src="./img/pro1.png" alt="Screenshot of Hangman Game">
+          <h3>Hangman Game</h3>
+          <p>Guess the word and test your mind!</p>
+        </article>
+        <article class="card">
+          <img src="./img/pro2.png" alt="Screenshot of memory game">
+          <h3>Memory Game</h3>
+          <p>Card Match Challenge</p>
+        </article>
+        <article class="card">
+          <img src="./img/pro3.png" alt="Screenshot of landing page project">
+          <h3>landing page</h3>
+          <p>Modern responsive landing page.</p>
+        </article>
+      </div>
+      <div class="project__button">
+        <a href="#" class="btn btn--primary">
+          View All Projects
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <p>&copy; Osama Abdallah 2026</p>
+  </footer>
+</body>
+
+</html>
