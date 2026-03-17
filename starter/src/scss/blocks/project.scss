@@ -1,9 +1,11 @@
 @use "../utils/utils.scss" as *;
 @use "../utils/var.scss" as *;
 
+section{
+    margin-bottom: 60px;
+}
 .project{
     padding: 80px 20px;
-
     .project__button{
         text-align: center;
         margin-top: 40px;

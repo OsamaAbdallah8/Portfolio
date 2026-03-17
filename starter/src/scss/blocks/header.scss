@@ -1,29 +1,89 @@
 @use "../utils/var.scss" as *;
+@use "../utils/utils" as *;
 
-.header{
+.header {
     position: sticky;
     top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
     background-color: $primary-color;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 
-    &__nav{
+    &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+        transition: all 0.3s ease;
     }
-    &__menu{
+
+    &__menu {
         display: flex;
         gap: 25px;
         list-style: none;
+        transition: max-height 0.4s ease-in-out;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            overflow: hidden;
+            max-height: 0; 
+        }
     }
-    a{
+
+    &__burger {
+        display: none;
+        cursor: pointer;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        span {
+            display: block;
+            width: 35px;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 6px;
+            transition: 0.3s;
+            }
+        }
+    }
+
+    a {
         color: #fff;
         text-decoration: none;
         font-weight: 500;
         transition: 0.3s;
+
+        &:hover {
+            color: $secondary-color;
+        }
     }
-    a:hover{
-        color: $secondary-color;
+
+    &:hover {
+        .header__nav {
+            padding: 10px;
+        }
+    }
+}
+
+#burger-toggle {
+    display: none;
+
+    &:checked ~ .header__nav .header__menu {
+        max-height: 500px; 
+    }
+
+    &:checked ~ .header__burger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    &:checked ~ .header__burger span:nth-child(2) {
+        opacity: 0;
+    }
+    &:checked ~ .header__burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
     }
 }

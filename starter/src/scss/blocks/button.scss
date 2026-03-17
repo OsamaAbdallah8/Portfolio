@@ -7,16 +7,29 @@
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
-
+    margin-top: 15px;
     &--primary{
         background: $primary-color;
         color: #fff;
+        animation: pulse 2s infinite;
+
     }
     &--secondary{
         background: $secondary-color;
         color: #fff;
+        animation: pulse 2s infinite;
+
     }
     &:hover{
         opacity: 0.8;
     }
 }
+@keyframes pulse {
+        0%,100%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.09);
+        }
+        
+    }
